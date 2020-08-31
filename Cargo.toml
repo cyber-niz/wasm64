@@ -2,7 +2,7 @@
 name = "wasm64"
 version = "0.1.0"
 authors = ["N1Z4M"]
-edition = "2020"
+edition = "2018"
 
 [package.metadata.ssvmup.profile.release]
 wasm-opt = ['-O4']
