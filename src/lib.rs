@@ -8,6 +8,6 @@ pub fn ec(cleartext: &str) -> String {
 }
 #[wasm_bindgen]
 pub fn dc(cleartext: &str) -> String {
-  let decoded = base64::decode(cleartext.as_bytes());
+  let decoded = base64::decode(cleartext.as_bytes()).unwrap();
   return decoded;
 }
