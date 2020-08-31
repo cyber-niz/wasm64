@@ -14,7 +14,7 @@ app.post('/encode', function (req, res) {
 })
 
 app.post('/decode', function (req, res) {
-  var cleartext = (req.body.cleartext);
+  var cleartext = (req.body.base64text);
   res.send(dc(cleartext))
 })
 
