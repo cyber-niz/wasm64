@@ -9,5 +9,5 @@ pub fn ec(cleartext: &str) -> String {
 #[wasm_bindgen]
 pub fn dc(cleartext: &str) -> String {
   let decoded = base64::decode(cleartext.as_bytes()).unwrap();
-  return String::from_utf8_lossy(&decoded);
+  return String::from_utf8_lossy(&decoded).to_string();
 }
