@@ -1,7 +1,6 @@
 extern crate base64;
 use wasm_bindgen::prelude::*;
 
-// Encrypt to base64
 #[wasm_bindgen]
 pub fn ec(cleartext: &str) -> String {
   let encoded = base64::encode(cleartext.as_bytes());
