@@ -1,5 +1,5 @@
 const express = require('express');
-const { encrypt } = require('../pkg/base64_lib.js');
+const { ec, dc } = require('../pkg/base64_lib.js');
 
 const app = express();
 const port = 8080;
@@ -14,7 +14,7 @@ app.post('/encode', function (req, res) {
 })
 
 app.post('/decode', function (req, res) {
-  var cleartext = (req.body.base64text);
+  var cleartext = (decodeURIComponent(req.body.base64text));
   res.send(dc(cleartext))
 })
 
