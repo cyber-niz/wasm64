@@ -1,5 +1,5 @@
 const express = require('express');
-const { ec, dc } = require('../pkg/base64_lib.js');
+const { ec, dc } = require('../pkg/wasm64_lib.js');
 
 const app = express();
 const port = 8080;
