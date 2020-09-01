@@ -1,0 +1,7 @@
+{
+  "name": "wasm64",
+  "description": "Base64 encode and decode web app.",
+  "stack": "container",
+  "env": {
+  }
+}
