@@ -6,7 +6,22 @@ A simple web app based off [this example app](https://github.com/second-state/wa
 
 If you have not done so already, follow these simple instructions to [install Rust, Node.js, SSVM, and ssvmup](https://www.secondstate.io/articles/setup-rust-nodejs/).
 
+## Deploy to Heroku
+Use this button [![Heroku Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/nizam0906/wasm64)
 
+Or create a Heroku app manually:
+
+```
+$ heroku create
+$ heroku stack:set container
+$ git push heroku master
+...
+remote: Verifying deploy... done.
+To https://git.heroku.com/shrouded-springs-35880.git
+ * [new branch]      master -> master
+```
+
+Live Demo : https://wasm64.herokuapp.com/
 ## Build the application
 
 ```
